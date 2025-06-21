@@ -1,0 +1,170 @@
+/* panatalla grande */
+@media (min-width: 820px) {
+  .cs_main_header {
+  padding: 20px 40px;
+  }
+  .cs_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cs_nav_list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cs_nav_list li {
+    position: relative;
+  }
+
+  .cs_nav_list a {
+    color: var(--color-text);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .cs_nav_list li.active > a,
+  .cs_nav_list a:hover {
+    color: var(--color-accent);
+  }
+
+  .cs_nav_list li.menu-item-has-children ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--color-dropdown);
+    padding: 10px 0;
+    min-width: 180px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .cs_nav_list li.menu-item-has-children:hover ul {
+    display: block;
+  }
+
+  .cs_nav_list li.menu-item-has-children ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--color-text);
+  }
+
+  .cs_nav_list li.menu-item-has-children ul li a:hover {
+    background-color: var(--color-accent);
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    height: calc(100vh - 80px);
+  }
+
+  .text-container-hero {
+    margin-top: 0;
+    max-width: 600px;
+    flex: 1;
+  }
+  
+
+  .cs-logo {
+    width: 200px;
+  }
+  .cs_hi {
+    font-size: 2.8em;
+    margin-top: 1rem;
+  }
+  h1 {
+    font-size: 3.5em;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 1.5em;
+    margin: 20px 0;
+  
+  }
+
+  .cs_socials {
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .cs_socials svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .buttons_container {
+    justify-content: flex-start;
+  }
+
+  .decoration {
+  position: absolute;
+  width: 180px;
+  height: 100%;
+  top: 45%;
+  left: 0;
+    z-index: 0;
+  background-color: #f4f4f8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23ff6f61' fill-opacity='0.57'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+ .about_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .skills_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .portfolio_title {
+    font-size: 3.2rem;
+  }
+
+  .footer_content.container {
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+  .footer_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .another_conatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .footer_bottom {
+    display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  }
+  
+  .sroll_up_button {
+    position: absolute;
+    width: 50px;
+    right: 0px;
+    bottom: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  .scroll_top i {
+  font-size: 24px;
+  /* <-- ¡Ajusta este valor como quieras! */
+}
+   
+}
