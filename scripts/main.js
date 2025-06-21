@@ -33,7 +33,7 @@ window.addEventListener("scroll", function () {
 });
 
 
-  particlesJS("particles-js", {"particles":{"number":{"value":104,"density":{"enable":true,"value_area":801.3648243462092}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.25654592973848367,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":8.017060304327615,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":4,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":1202.559045649142,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+  particlesJS("particles-js", {"particles":{"number":{"value":101,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":144.30708547789706,"color":"#ffffff","opacity":0.5,"width":1},"move":{"enable":true,"speed":4,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":450.7028528272465,"size":40,"duration":5.603332764879281,"opacity":8,"speed":3},"repulse":{"distance":100,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -88,4 +88,31 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.1 });
 
   revealElements.forEach((el) => observer.observe(el));
+});
+
+// --- FUNCIONALIDAD PARA EL BOTÓN DE SCROLL HACIA ARRIBA ---
+
+// Esperamos a que todo el contenido de la página se cargue primero
+document.addEventListener('DOMContentLoaded', () => {
+
+  // 1. Seleccionamos el botón por su clase
+  const scrollTopButton = document.querySelector('.scroll_top');
+
+  // 2. Nos aseguramos de que el botón realmente existe en la página
+  if (scrollTopButton) {
+
+    // 3. Añadimos un "escuchador" que se activa cuando alguien hace click
+    scrollTopButton.addEventListener('click', (event) => {
+      
+      // 4. Prevenimos el comportamiento por defecto del enlace (que es un salto brusco)
+      event.preventDefault();
+
+      // 5. Usamos la magia de JavaScript para hacer un scroll suave hasta el inicio (top: 0)
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // ¡Esta es la clave para la animación suave!
+      });
+    });
+  }
+
 });

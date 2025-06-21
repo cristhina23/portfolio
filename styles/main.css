@@ -22,7 +22,8 @@ body {
   font-family: var(--font-secondary);
   font-size: 18px;
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-variant);
+  scroll-behavior: smooth;
 }
 .cs_title {
   font-family: var(--font-primary);
@@ -368,7 +369,6 @@ canvas {
   width: 100%;
   height: 100%;
   z-index: 0;
-  pointer-events: none;
 }
 
 /* ---- stats.js ---- */
@@ -732,11 +732,6 @@ canvas {
   overflow: hidden;
 }
 
-/* ==========================================================================
-   Footer Fusión: Cristal Cinético
-   ========================================================================== */
-
-/* -- 1. El Estilo del Contenedor Exterior -- */
 .site_footer {
   position: relative;
   padding: 80px 30px;
@@ -819,7 +814,7 @@ canvas {
 }
 .footer_socials a:hover {
   color: var(--color-accent);
-  transform: translateY(-4px);
+  
 }
 
 /* Columna 2: Navegación */
@@ -841,31 +836,19 @@ canvas {
   position: relative;
   transition: color 0.3s ease;
 }
-/* Efecto de revelación al pasar el ratón */
-.footer_nav a::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  padding: 10px;
-  width: 100%; height: 100%;
-  background-color: var(--color-accent);
-  z-index: -1;
-  clip-path: circle(0% at 50% 50%);
-  transition: clip-path 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-}
+
 .footer_nav a:hover {
-  color: var(--color-bg-variant);
-}
-.footer_nav a:hover::before {
-  clip-path: circle(100% at 50% 50%);
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
 }
 
-/* Fila Inferior: Copyright y Flecha */
+
 .footer_copy {
   margin: 0;
   color: var(--color-text-medium);
-  justify-self: start; /* Alineado a la izquierda */
-  align-self: end; /* Alineado abajo */
+  justify-self: start; 
+  align-self: end; 
+  font-size: 1rem;
 }
 
 .scroll_top {
