@@ -166,5 +166,10 @@
   font-size: 24px;
   /* <-- ¡Ajusta este valor como quieras! */
 }
+
+.icon img {
+  max-width: 200px;
+  height: auto;
+}
    
 }
