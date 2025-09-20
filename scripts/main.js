@@ -75,3 +75,31 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = Math.max(currentScroll, 0);
 });
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch('https://formspree.io/f/mrbanard', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.reset();
+      window.location.href = 'thank.html';
+    } else {
+      alert('There was a problem submitting the form.');
+    }
+  } catch (error) {
+    alert('There was an error sending the form.');
+    console.error(error);
+  }
+});

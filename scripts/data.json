@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "name": "Anon – E-commerce Website",
+    "dateCompleted": "August 2023",
+    "image": "images/anon.png",
+    "shortDescription": "A modern responsive e-commerce website for fashion products.",
+    "longDescription": "Anon is a fashion e-commerce website that allows users to explore product categories, view featured and discounted items, discover new arrivals, and subscribe to a newsletter for promotions. The interface is clean, intuitive, and responsive, ensuring a smooth shopping experience across devices.",
+    "technologies": ["HTML5", "CSS3", "JavaScript (Vanilla)", "Responsive Design", "CSS Animations & Transitions"],
+    "uiux": [
+      "Card-based product layout with promotional highlights",
+      "Category cards with featured images and labels",
+      "Popular Categories section for quick navigation",
+      "Newsletter subscription box",
+      "Header with language & currency selector",
+      "Fully responsive design with adaptive product grids"
+    ],
+    "features": [
+      "Category navigation (Electronics, Women, Men, etc.)",
+      "Product filters",
+      "Shopping cart placeholder",
+      "Highlighted offers with old/new pricing",
+      "Deal of the Day section with countdown",
+      "Newsletter subscription",
+      "Language & currency selector"
+    ],
+    "lessons": [
+      "Mastered CSS Grid and Flexbox",
+      "Improved hover states, transitions, and overlays",
+      "Handled images with object-fit",
+      "Structured HTML semantically",
+      "Implemented lazy loading and performance optimizations"
+    ],
+    "challenges": [
+      "Keeping overlays within card boundaries",
+      "Maintaining readability with image backgrounds",
+      "Designing consistent breakpoints",
+      "Ensuring typography and color consistency"
+    ],
+    "links": {
+      "liveDemo": "https://cristhina23.github.io/Anon.github.io-main",
+      "repo": "https://github.com/cristhina23/Anon.github.io-main"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Full-Stack E-commerce Platform",
+    "dateCompleted": "In Progress",
+    "image": "images/e-shop.png",
+    "shortDescription": "A complete e-commerce platform with React frontend and Node/Express backend.",
+    "longDescription": "E-Shop is a full-stack e-commerce platform designed to simulate a real shopping experience. The frontend focuses on a clean and modern shopping interface, while the backend manages authentication, user roles, and product operations.",
+    "technologies": {
+      "frontend": ["React.js", "HTML5", "CSS3", "JavaScript (ES6+)", "Axios", "Vercel"],
+      "backend": ["Node.js", "Express.js", "MongoDB + Mongoose", "JWT Authentication", "Bcrypt.js", "Nodemailer", "Render"]
+    },
+    "uiux": [
+      "Product cards with prices & labels",
+      "Category navigation and responsive grid",
+      "Newsletter subscription & promotional banners",
+      "Shopping cart placeholder",
+      "Alert/feedback system",
+      "User profile page (in progress)"
+    ],
+    "features": {
+      "frontend": [
+        "Responsive design with clean product grids",
+        "Navigation & alert system",
+        "Integration with backend API"
+      ],
+      "backend": [
+        "Authentication with JWT & bcrypt",
+        "Email verification and password reset",
+        "Role-based access control (Admin/User)",
+        "Profile management (in progress)",
+        "Server-triggered alerts"
+      ]
+    },
+    "lessons": [
+      "Implemented secure authentication flows",
+      "Designed REST APIs",
+      "Handled real-time feedback with alerts",
+      "Built role-based access",
+      "Deployed frontend/backend integration"
+    ],
+    "challenges": [
+      "CORS debugging",
+      "Secure password reset flow",
+      "Managing user roles & permissions",
+      "Keeping MongoDB schema scalable"
+    ],
+    "links": {
+      "liveDemo": "https://e-shop-github-io-main.vercel.app",
+      "repo": "https://github.com/cristhina23/E-shop.github.io-main/tree/main"
+    
+    }
+  },
+  {
+    "id": 3,
+    "name": "Dashboard Project",
+    "dateCompleted": "August 2024",
+    "image": "images/dashboard.png",
+    "shortDescription": "Admin-style dashboard with charts, tables, and task management tools.",
+    "longDescription": "This Dashboard provides administrators and users with a centralized platform to visualize and interact with data, track analytics, and manage resources.",
+    "technologies": ["React.js", "JavaScript (ES6+)", "TailwindCSS", "Syncfusion Components", "React Router v6", "React Icons", "Vercel"],
+    "uiux": [
+      "Sidebar navigation with top bar",
+      "Charts, tables, and grids",
+      "Kanban board and calendar",
+      "Prominent key metrics",
+      "Responsive for desktop, tablet, and mobile",
+      "Tooltips, hover effects, and loading states"
+    ],
+    "features": [
+      "Data visualization",
+      "Scheduling tools",
+      "Kanban task management",
+      "Rich text editor",
+      "Responsive sidebar layout"
+    ],
+    "lessons": [
+      "Integrated Syncfusion components",
+      "Built responsive admin dashboards",
+      "Improved state handling",
+      "Practiced TailwindCSS styling",
+      "Learned modular design with routing"
+    ],
+    "challenges": [
+      "Performance with large datasets",
+      "Balancing usability with aesthetics",
+      "Responsive design for all components",
+      "Managing heavy dependencies"
+    ],
+    "links": {
+      "liveDemo": "https://dashboard-seven-alpha-75.vercel.app",
+      "repo": "https://github.com/cristhina23/Dashboard"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Fruti App Project",
+    "dateCompleted": "In Progress",
+    "image": "images/frutyapp.png",
+    "shortDescription": "Modern e-commerce app for selling fresh fruit and produce online.",
+    "longDescription": "Fruti App combines a smooth React frontend with Firebase backend and Stripe payments. It allows authentication, product browsing, shopping cart, and secure checkout.",
+    "technologies": {
+      "frontend": ["React.js", "React Router v7", "Redux", "Axios", "Firebase SDK", "TailwindCSS", "Material UI", "CoreUI", "Chart.js", "Swiper", "Framer Motion", "Toastify"],
+      "backend": ["Firebase Functions", "Node.js", "Express.js", "Firebase Admin SDK", "Stripe", "dotenv", "cors"]
+    },
+    "uiux": [
+      "Modern layout with CoreUI + MUI",
+      "Dynamic product catalog with filters",
+      "Data-rich admin dashboards",
+      "Responsive design for all devices",
+      "Animations and smooth transitions",
+      "Notifications with toasts & alerts"
+    ],
+    "features": [
+      "User authentication",
+      "Role-based access",
+      "Product listing with filters",
+      "Shopping cart & checkout",
+      "Stripe integration",
+      "Admin dashboard"
+    ],
+    "lessons": [
+      "Integrated multiple UI libraries",
+      "Used Redux for state management",
+      "Deployed Firebase Functions",
+      "Implemented Stripe payments",
+      "Created reusable React components"
+    ],
+    "challenges": [
+      "Library compatibility",
+      "Managing large dependencies",
+      "Async flows with Firebase",
+      "Stripe sandbox integration",
+      "Responsive admin design"
+    ],
+    "links": {
+      "liveDemo": "[Frontend Demo link]",
+      "repoFrontend": "https://github.com/cristhina23/Fruti-app-main/tree/main/Client",
+      "repoBackend": "https://github.com/cristhina23/Fruti-app-main/tree/main/Server"
+    }
+  },
+  {
+    "id": 5,
+    "name": "SmartCook Project",
+    "dateCompleted": "August 2025",
+    "image": "images/smartcook.png",
+    "shortDescription": "Recipe discovery and meal-planning app with personalization.",
+    "longDescription": "SmartCook helps users cook efficiently by discovering recipes, saving favorites, and planning meals. Built as a final project for WDD-330, it showcases state management, personalization, and responsive UI.",
+    "technologies": ["React.js", "HTML5", "CSS3", "JavaScript ES6+", "React Router", "Axios/Fetch", "LocalStorage", "Vercel"],
+    "uiux": [
+      "Homepage with top recipes",
+      "Ingredient-based search",
+      "Sections for personalized picks",
+      "User dashboard for saved recipes",
+      "Newsletter subscription",
+      "Responsive design"
+    ],
+    "features": [
+      "Ingredient search",
+      "Save & delete recipes per user",
+      "Curated recipe suggestions",
+      "User login/dashboard",
+      "Newsletter subscription"
+    ],
+    "lessons": [
+      "Built search functionality",
+      "Improved responsive UI",
+      "Implemented login/dashboard",
+      "Handled recipe saving/deleting",
+      "Deployed with Vercel"
+    ],
+    "challenges": [
+      "Ensuring data loads correctly",
+      "Maintaining recipe ownership per user",
+      "Responsive layouts",
+      "Asynchronous error handling"
+    ],
+    "links": {
+      "liveDemo": "https://wdd-330-final-project-blond.vercel.app",
+      "repo": "https://github.com/cristhina23/wdd-330-final-project"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Perfect Diet Project",
+    "dateCompleted": "June 2025",
+    "image": "images/perfectdiet.png",
+    "shortDescription": "Frontend web app for personalized diet and meal planning.",
+    "longDescription": "Perfect Diet is a frontend-only app that fetches healthy recipes from an API, helping users personalize diets based on preferences and goals.",
+    "technologies": ["HTML5", "CSS3", "JavaScript ES6+", "Fetch API", "Responsive Design", "GitHub Pages"],
+    "uiux": [
+      "Homepage introducing personalized diets",
+      "Goal/ingredient selection steps",
+      "Favorite recipes section",
+      "Newsletter form",
+      "Navigation with profile & settings",
+      "Responsive layouts"
+    ],
+    "features": [
+      "Fetch recipes from API",
+      "Display recipe cards",
+      "Personalization (likes/dislikes)",
+      "Questionnaire for diet goals",
+      "Newsletter subscription"
+    ],
+    "lessons": [
+      "Worked with Fetch API",
+      "Improved diet/health-focused UI",
+      "Designed personalization options",
+      "Built responsive layouts"
+    ],
+    "challenges": [
+      "Matching fetched data with UI",
+      "Filtering disliked ingredients",
+      "Validating questionnaire inputs",
+      "Optimizing performance with images"
+    ],
+    "links": {
+      "liveDemo": "https://cristhina23.github.io/wdd231/final-project",
+      "repo": "https://github.com/cristhina23/wdd231/tree/main/final-project"
+    }
+  }
+]

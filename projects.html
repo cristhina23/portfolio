@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
+
+    <title>Viszelle Chacon | Personal Portfolio</title>
+
+    <meta
+      name="description"
+      content="Soy Viszelle Chacon, desarrolladora web y de software. Portafolio con proyectos en React, Node.js, Tailwind, MongoDB y más."
+    />
+
+    <meta
+      name="keywords"
+      content="Viszelle Chacon, portafolio, portfolio, software developer, web developer, react, node.js, tailwind, javascript, mongoDB, Perú, Venezuela"
+    />
+
+    <meta name="author" content="Viszelle Chacon" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Viszelle Chacon | Personal Portfolio" />
+    <meta
+      property="og:description"
+      content="Desarrolladora web y de software. Mira mis proyectos en React, Node.js y más."
+    />
+    <meta property="og:image" content="https://tusitio.com/images/preview.jpg" />
+    <!-- cambia por tu imagen -->
+    <meta property="og:url" content="https://tusitio.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Viszelle Chacon | Personal Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Desarrolladora web y de software. Mira mis proyectos en React, Node.js y más."
+    />
+    <meta name="twitter:image" content="https://tusitio.com/images/preview.jpg" />
+    <!-- cambia por tu imagen -->
+
+    <!-- Canonical URL (importante para SEO) -->
+    <link rel="canonical" href="https://tusitio.com" />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+
+  <body>
+    <div class="cs_preloader cs_center">
+      <div class="cs_preloader_in"></div>
+    </div>
+    <!-- Start Header Section -->
+    <header class="cs_site_header cs_sticky_header">
+      <div class="cs_main_header">
+        <div class="container">
+          <div class="cs_main_header_in">
+            <div class="cs_main_header_left">
+              <a class="cs_site_branding" href="index.html">
+                <img src="images/logo.png" alt="Logo" />
+              </a>
+            </div>
+
+            <div class="cs_main_header_center">
+              <nav class="cs_nav">
+                <ul class="cs_nav_list">
+                  <li class="active menu-item-has-children"><a href="index.html">Home</a> </li>
+                  <li class="menu-item-has-children"><a href="index.html#about">About</a> </li>
+                  <li class="menu-item-has-children"><a href="index.html#portfolio">Portfolio</a> </li>
+                  <li class="menu-item-has-children"><a href="index.html#skills">Skills</a> </li>
+                  <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="cs_main_header_right">
+              <a href="index.htmlindex.html#contact" class="cs_btn cs_style_1"><span>Hire Me</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="site_main ">
+     <!-- <div class="container">
+       <h1 class="title blue center">Projects</h1>
+      <div class="buttons">
+        <button id="grid" class="cs_btn cs_style_1">Grid</button>
+        <button id="list" class="cs_btn cs_style_1">List</button>
+      </div> -->
+     <div class="container">
+      <h1 class="page_title">Projects</h1>
+
+      <div id="projects-container" class="projects-grid"></div>
+      <p id="last-updated"></p> 
+     </div>
+    </main>
+
+    <footer class="site_footer">
+      <div class="footer_content container">
+        <div class="footer_top">
+          <div class="another_conatiner">
+            <h3 class="footer_logo">Viszelle <span class="highlight">Chacon</span></h3>
+            <div class="footer_socials">
+              <ul class="footer_socials">
+                <li
+                  ><a href="https://www.linkedin.com/in/cristhina-chacon-b9799a28a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                    ><i class="fab fa-linkedin-in"></i></a
+                ></li>
+                <li
+                  ><a href="https://github.com/cristhina23?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                    ><i class="fab fa-github"></i></a
+                ></li>
+                <li
+                  ><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                    ><i class="fab fa-twitter"></i></a
+                ></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_nav_container">
+            <h4 class="highlight">Navigation</h4>
+            <ul class="footer_nav">
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="index.html#portfolio">Portfolio</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_botom">
+          <p class="footer_copy">&copy; 2025 Viszelle Chacon. All rights reserved.</p>
+          <div class="sroll_up_button">
+            <a href="#hero" class="scroll_top" aria-label="Back to top">
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+
+    
+    <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/projects.js"></script>
+  </body>
+</html>
