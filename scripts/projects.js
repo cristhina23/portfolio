@@ -1,22 +1,9 @@
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
 const displayContainer = document.getElementById("projects-container");
 const lastModified = document.lastModified;
 
 document.getElementById("last-updated").textContent = `Last modified: ${lastModified}`;
 
 let projectsData = [];
-
-// Botón Grid
-gridbutton.addEventListener("click", () => {
-  displayContainer.classList.remove("list");
-  displayGrid(projectsData);
-});
-
-// Botón Lista
-listbutton.addEventListener("click", () => {
-  displayList(projectsData);
-});
 
 // Cargar proyectos al iniciar
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,7 +17,8 @@ async function loadProjects() {
 
     const projects = await response.json();
     projectsData = projects;
-    displayGrid(projects); 
+    displayGrid(projects);
+    
   } catch (error) {
     console.error("Error fetching projects:", error);
   }
@@ -58,23 +46,4 @@ function displayGrid(projects) {
   });
 }
 
-// LIST VIEW
-function displayList(projects) {
-  displayContainer.innerHTML = "";
-  displayContainer.classList.add("list");
 
-  projects.forEach(project => {
-    const card = document.createElement("div");
-    card.classList.add("card-list");
-
-    card.innerHTML = `
-      <div class="card-list-info">
-        <p class="name-list">${project.name}</p>
-        <p>${project.description}</p>
-        <a href="${project.live}" target="_blank">Live</a> | 
-        <a href="${project.repo}" target="_blank">Repo</a>
-      </div>
-    `;
-    displayContainer.appendChild(card);
-  });
-}
