@@ -255,6 +255,11 @@
     font-size: 1.5em;
   }
 
+  .cs_title {
+    font-size: 3.5em;
+  
+  }
+
   .text-container-hero {
   display: flex;
   flex-direction: column;
