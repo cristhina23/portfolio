@@ -47,12 +47,9 @@
     "name": "Full-Stack E-commerce Platform",
     "dateCompleted": "In Progress",
     "image": "images/e-shop.png",
-    "shortDescription": "A complete e-commerce platform with React frontend and Node/Express backend.",
+    "shortDescription": "E-commerce platform with React frontend and Node/Express backend.",
     "longDescription": "E-Shop is a full-stack e-commerce platform designed to simulate a real shopping experience. The frontend focuses on a clean and modern shopping interface, while the backend manages authentication, user roles, and product operations.",
-    "technologies": {
-      "frontend": ["React.js", "HTML5", "CSS3", "JavaScript (ES6+)", "Axios", "Vercel"],
-      "backend": ["Node.js", "Express.js", "MongoDB + Mongoose", "JWT Authentication", "Bcrypt.js", "Nodemailer", "Render"]
-    },
+    "technologies": ["React.js", "HTML5", "CSS3", "JavaScript (ES6+)", "Axios", "Vercel","Node.js", "Express.js", "MongoDB + Mongoose", "JWT Authentication", "Bcrypt.js", "Nodemailer", "Render"],
     "uiux": [
       "Product cards with prices & labels",
       "Category navigation and responsive grid",
@@ -61,20 +58,18 @@
       "Alert/feedback system",
       "User profile page (in progress)"
     ],
-    "features": {
-      "frontend": [
+    "features":  [
         "Responsive design with clean product grids",
         "Navigation & alert system",
-        "Integration with backend API"
-      ],
-      "backend": [
+        "Integration with backend API",
+      
         "Authentication with JWT & bcrypt",
         "Email verification and password reset",
         "Role-based access control (Admin/User)",
         "Profile management (in progress)",
         "Server-triggered alerts"
       ]
-    },
+    ,
     "lessons": [
       "Implemented secure authentication flows",
       "Designed REST APIs",
@@ -142,10 +137,7 @@
     "image": "images/frutyapp.png",
     "shortDescription": "Modern e-commerce app for selling fresh fruit and produce online.",
     "longDescription": "Fruti App combines a smooth React frontend with Firebase backend and Stripe payments. It allows authentication, product browsing, shopping cart, and secure checkout.",
-    "technologies": {
-      "frontend": ["React.js", "React Router v7", "Redux", "Axios", "Firebase SDK", "TailwindCSS", "Material UI", "CoreUI", "Chart.js", "Swiper", "Framer Motion", "Toastify"],
-      "backend": ["Firebase Functions", "Node.js", "Express.js", "Firebase Admin SDK", "Stripe", "dotenv", "cors"]
-    },
+    "technologies": ["React.js", "React Router v7", "Redux", "Axios", "Firebase SDK", "TailwindCSS", "Material UI", "CoreUI", "Chart.js", "Swiper", "Framer Motion", "Toastify", "Firebase Functions", "Node.js", "Express.js", "Firebase Admin SDK", "Stripe", "dotenv", "cors"],
     "uiux": [
       "Modern layout with CoreUI + MUI",
       "Dynamic product catalog with filters",

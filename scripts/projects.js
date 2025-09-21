@@ -1,7 +1,5 @@
 const displayContainer = document.getElementById("projects-container");
-const lastModified = document.lastModified;
 
-document.getElementById("last-updated").textContent = `Last modified: ${lastModified}`;
 
 let projectsData = [];
 
@@ -32,14 +30,17 @@ function displayGrid(projects) {
     card.classList.add("card");
 
     card.innerHTML = `
-      <div class="card-image">
+      <div >
+        <div>
         <img src="${project.image}" alt="${project.name}" />
       </div>
-      <div class="card-info-project">
+      <div>
         <h3>${project.name}</h3>
-        <p>${project.shortDescription}</p>
-        <a href="${project.links.liveDemo}" target="_blank">Ver Live</a> | 
-        <a href="${project.links.repo}" target="_blank">Ver Repo</a>
+        <p class="cs_text">${project.shortDescription}</p>
+        <div class="flex-center"><a class="cs_btn cs_style_1" href="project-details.html?id=${project.id}">Project Details</a></div>
+        <a class="links" href="${project.links.liveDemo}" target="_blank">Ver Live</a> | 
+        <a class="links" href="${project.links.repo}" target="_blank">Ver Repo</a>
+      </div>
       </div>
     `;
     displayContainer.appendChild(card);
