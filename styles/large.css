@@ -1,16 +1,32 @@
 
 @media (min-width: 769px)  {
   .cs_main_header {
-    padding: 20px 40px;
+    padding: 0 3rem;
     display: block;
   }
   .cs_nav {
+    position: static;       /* ✅ ya no absoluto */
+    transform: none;
+    padding: 0;
+    background: transparent;
+    transform: translateY(0);
+  }
+  .cs_main_header_in {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+   
+  }
+  .cs_main_header_center {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
   }
   .cs_nav_list {
     display: flex;
+    flex-direction: row;
     list-style: none;
     gap: 30px;
     padding: 0;
@@ -50,6 +66,35 @@
   }
   .cs_nav_list li.menu-item-has-children ul li a:hover {
     background-color: var(--color-accent);
+  }
+
+  .cs_btn {
+    background: var(--color-accent);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: perspective(500px) translateZ(0);
+  }
+
+  .cs_btn:hover {
+    background: var(--color-accent-hover);
+    transform: perspective(500px) translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(255, 111, 97, 0.4);
+
+  }
+
+  .cs_hamburger {
+    display: none;
+  }
+
+  #hireMe {
+    display: block;
   }
   .hero {
     height: calc(100vh - 80px); 

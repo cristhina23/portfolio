@@ -52,7 +52,7 @@
   <!-- Start Header Section -->
   <header class="cs_site_header cs_sticky_header">
     <div class="cs_main_header">
-      <div class="container">
+      <div class="container-header">
         <div class="cs_main_header_in">
           <div class="cs_main_header_left">
             <a class="cs_site_branding"  href="index.html">
@@ -61,7 +61,9 @@
           </div>
 
           <div class="cs_main_header_center">
-            <nav class="cs_nav">
+
+           
+            <nav class="cs_nav" id="navMenu">
               <ul class="cs_nav_list">
                 <li class="active menu-item-has-children"><a href="index.html">Home</a>
                   
@@ -69,10 +71,11 @@
                 <li class="menu-item-has-children"><a href="#about">About</a>
 
                 </li>
+                
+                <li class="menu-item-has-children"><a href="#skills">Skills</a>
+                </li>
                 <li class="menu-item-has-children"><a href="#portfolio">Portfolio</a>
                   
-                </li>
-                <li class="menu-item-has-children"><a href="#skills">Skills</a>
                 </li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
@@ -80,7 +83,12 @@
           </div>
 
           <div class="cs_main_header_right">
-            <a href="#contact" class="cs_btn cs_style_1"><span>Hire Me</span></a>
+            <a href="#contact" class="cs_btn cs_style_1" id="hireMe"><span>Hire Me</span></a>
+             <div class="cs_hamburger" id="menuBtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
@@ -90,7 +98,7 @@
   <main>
     <div class="global-container">
 
-      <section class="container hero">
+      <section class="container hero" id="hero">
         <div class="cs_hero cs_style_1">
           <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles"></span>  </div>
         </div>
@@ -135,7 +143,7 @@
             
           </div>
           <div class="buttons_container">
-            <a href="scripts/assets/Cristhina_Chacon_CV_wd.docx" class="cs_btn cs_style_1" download="Cristhina_Chacon_CV_wd.docx"> <span>Download CV</span></a>
+            <a href="scripts/assets/Cristhina_Chacon_CV_wd.docx" id="download_cv" class="cs_btn cs_style_1" download="Cristhina_Chacon_CV_wd.docx"> <span>Download CV</span></a>
             <a href="#contact" class="cs_btn cs_style_2">Hire Me</a>
           </div>
         </div>

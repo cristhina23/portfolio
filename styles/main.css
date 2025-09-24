@@ -62,12 +62,20 @@ body {
 
 .cs_main_header {
   padding: 20px 20px;
-}
+  display: flex;
+  justify-content: space-between; 
 
+}
+.container-header {
+   width: 100%;
+
+   
+}
 .cs_main_header_in {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .cs_main_header_left img {
@@ -76,31 +84,95 @@ body {
 
 /* ---------- NAV MENU ---------- */
 
+
+
 .cs_nav {
-  display: none;
+  position: absolute;
+  top: 90px; 
+  left: 0;
+  width: 100%;
+  background: var(--color-bg-variant);
+  transform: translateX(-120%);
+  transition: transform 0.3s ease-in-out;
+  padding: 2rem 1rem;
+}
+
+.cs_nav.active {
+  transform: translateX(0); /* aparece el menú */
+}
+
+.cs_nav_list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.cs_nav_list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.cs_nav_list li a:hover {
+  color: var(--color-accent); /* color de acento */
+}
+
+.cs_nav_list li.active a {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+/* =======================
+   Hamburger button
+======================= */
+.cs_hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.cs_hamburger span {
+  background: #fff;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.cs_hamburger span:nth-child(1) { top: 0; }
+.cs_hamburger span:nth-child(2) { top: 8px; }
+.cs_hamburger span:nth-child(3) { top: 16px; }
+
+.cs_hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.cs_hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.cs_hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 8px;
 }
 
 /* ---------- BOTÓN HIRE ME ---------- */
-.cs_btn {
-  background: var(--color-accent);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s;
-  cursor: pointer;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transform: perspective(500px) translateZ(0);
-}
 
-.cs_btn:hover {
-  background: var(--color-accent-hover);
-  transform: perspective(500px) translateY(-5px) scale(1.05);
-  box-shadow: 0 12px 24px rgba(255, 111, 97, 0.4);
 
-}
+
+
+
 
 a {
   z-index: 1;
@@ -241,23 +313,38 @@ p {
   margin-top: 20px;
   justify-content: center;
 }
-
+.cs_btn {
+    background: var(--color-accent);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: perspective(500px) translateZ(0);
+}
 .cs_style_1 {
   margin: 30px 0;
 }
+#hireMe {
+  display: none;
+}
 
 .cs_style_2 {
-  position: relative;
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 30px 0;
-  color: #fff;
-  background-color: transparent;
-  border: 2px solid var(--color-accent);
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 0.6s ease;
+    position: relative;
+    /* display: inline-block; */
+    padding: 12px 20px;
+    margin: 30px 0;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid var(--color-accent);
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.6s ease;
 }
 
 .cs_style_2::before {

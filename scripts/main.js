@@ -2,7 +2,55 @@
 const header = document.querySelector('.cs_site_header');
 let lastScrollTop = 0;
 
+const menuBtn = document.getElementById('menuBtn');
+const navMenu = document.getElementById('navMenu');
+const navLinks = document.querySelectorAll(".cs_nav_list li a");
+const sections = document.querySelectorAll('section[id]');
+
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      // quitar "active" de todos
+      navLinks.forEach(l => l.parentElement.classList.remove("active"));
+
+      // agregar "active" al <li> del link clickeado
+      this.parentElement.classList.add("active");
+    });
+  });
+
+   // ---- Cuando hago scroll ----
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100; // margen para detectar antes
+    const sectionHeight = section.clientHeight;
+
+    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  // Si no está en ninguna sección, poner Home
+  if (window.scrollY < 200) {
+    current = "home";
+  }
+
+  navLinks.forEach(link => {
+    link.parentElement.classList.remove("active");
+    if (link.getAttribute("href") === `#${current}`) {
+      link.parentElement.classList.add("active");
+    }
+  });
+  });
   // Show header on page load if user has already scrolled down
   if (window.scrollY > 50) {
     header.classList.remove("cs_top");
