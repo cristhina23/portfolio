@@ -342,7 +342,7 @@ p {
     background-color: transparent;
     border: 2px solid var(--color-accent);
     cursor: pointer;
-    overflow: hidden !important;
+    overflow: hidden;
     z-index: 1;
     transition: color 0.6s ease;
 }
@@ -362,10 +362,9 @@ p {
 }
 
 .cs_style_2:hover::before {
-  width: 300%;   
-  height: 300%; 
+  width: 200%;
+  height: 500%;
 }
-
 
 .cs_style_2:hover {
   color: #fff;

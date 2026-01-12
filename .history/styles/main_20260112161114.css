@@ -362,8 +362,8 @@ p {
 }
 
 .cs_style_2:hover::before {
-  width: 300%;   
-  height: 300%; 
+  width: 300%;   /* cuadrado grande */
+  height: 300%;  /* mantiene proporción */
 }
 
 
